@@ -1,0 +1,47 @@
+table,td,th{
+    border: 1px solid #aaa;
+    padding: 8px;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.6;
+}
+table{
+    width: 600px;
+    margin: 20px auto;
+}
+
+#container{
+    margin-top: 100px;
+    background-color: rgb(224, 239, 244);
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-areas: 
+          'h h h h h'
+          'n m m m a'
+          'n m m m a'
+          'f f f f f';
+    grid-gap: 10px;
+}
+#head{
+    background-color: pink;
+    grid-area: h;
+    height: 100px;
+}
+#nav{
+    background-color: rgb(249, 249, 135);
+    grid-area: n;
+}
+#main{
+    background-color: rgb(130, 242, 130);
+    grid-area: m;
+    height: 400px;
+}
+#aside{
+    background-color: rgb(242, 120, 120);
+    grid-area: a;
+}
+#footer{
+    background-color: rgb(194, 193, 193);
+    grid-area: f;
+    height: 100px;
+}
